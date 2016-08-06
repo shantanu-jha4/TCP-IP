@@ -1,13 +1,13 @@
-////
-////  client_send.c
-////
-////  client for sending to select server
-////  Created by Shantanu Jha on 8/4/16.
-////  Copyright © 2016 BlueBall. All rights reserved.
+/*
+  client.c
+  client for sending to/receiving from select server
+  Author: Shantanu Jha
+  Version: 1.3
+*/
 
 
 #include "servient.h"
-#define MY_PORT "6969"
+#define MY_PORT "2345"
 const int BUFF_SIZE = 256;
 
 void* get_in_addr(struct sockaddr* sa) {
