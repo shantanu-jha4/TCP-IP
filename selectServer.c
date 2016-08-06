@@ -1,13 +1,14 @@
-//
-//  selectServer.c
-//
-//
-//  Created by Shantanu Jha on 8/3/16.
-//  Copyright © 2016 BlueBall. All rights reserved.
-//
+/*
+  selectServer.c
+  
+  Server uses select to monitor sockets for reading and sending
+  
+  Author Shantanu Jha
+  Version: 1.2
+*/
 
 #include "servient.h"
-#define PORT_NO "6969"
+#define PORT_NO "2345"
 
 void *get_in_addr(struct sockaddr* sa) {
     if (sa->sa_family == AF_INET)
